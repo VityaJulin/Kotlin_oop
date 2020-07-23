@@ -8,6 +8,8 @@ class Profile(
     private var status: String,
     private var avatar: String
 ) {
-    var fullname: String = "$name $soname"
-        get() = field
+    val fullname: String
+        get() {
+            return "$name $soname"
+        }
 }
