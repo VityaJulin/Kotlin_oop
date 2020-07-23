@@ -1,7 +1,7 @@
 package Hierarchy
 
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Test
+import kotlin.test.assertEquals
+import kotlin.test.Test
 
 internal class ViewGroupTest {
     @Test
@@ -10,12 +10,5 @@ internal class ViewGroupTest {
         val title = TextView("Main Screen")
 
         assertEquals(true, main.addView(title))
-    }
-
-    @Test
-    fun viewTest() {
-        val view = View()
-
-        assertEquals("View clicked", view.click())
     }
 }
